@@ -4,6 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Baron Trump’s Marvellous Underground Journey — Picture-Book English Edition</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet" />
+
 <style>
 :root{
   --paper:#fffdf9; --ink:#3a3228; --muted:#8a7b6a; --accent:#c4785a;
@@ -16,7 +21,7 @@ body{
   margin:0; color:var(--ink);
   background:radial-gradient(1200px 600px at 50% -10%, #ffeeda 0%, transparent 55%),
              linear-gradient(180deg,#f3ebe0 0%, #efe4d4 100%);
-  font-family: Georgia, "Times New Roman", "Apple SD Gothic Neo", serif;
+  font-family:"Gowun Dodum", Georgia, "Times New Roman", sans-serif;
   line-height:1.9; font-size:17px; -webkit-font-smoothing:antialiased;
 }
 .topbar{
@@ -126,6 +131,40 @@ body{
   box-shadow:0 8px 18px rgba(196,120,90,.35);
 }
 .fab-reader button:disabled{opacity:.4; cursor:not-allowed}
+
+/* Storybook fonts: Jua (display) + Gowun Dodum (body) */
+body{
+  font-family:"Gowun Dodum","Apple SD Gothic Neo","Noto Sans KR",sans-serif !important;
+  letter-spacing:-0.01em;
+}
+.cover-body h1,
+.spread-text h2,
+.chapter-num,
+.toc h2,
+.topbar .brand,
+.reader-bar .title,
+.cover-body .eyebrow{
+  font-family:"Jua","Gowun Dodum",sans-serif !important;
+  letter-spacing:0;
+  font-weight:400 !important; /* Jua is already bold-looking */
+}
+.toc button,
+.reader-bar button,
+.reader-sub button,
+.topbar a,
+.topbar button,
+.note,
+.toc-hint,
+.footer{
+  font-family:"Gowun Dodum","Apple SD Gothic Neo",sans-serif !important;
+}
+.story p,
+.synopsis,
+.spread-art .cap,
+.en-sub{
+  font-family:"Gowun Dodum","Apple SD Gothic Neo",sans-serif !important;
+}
+
 </style>
 </head>
 <body class="view-home">
